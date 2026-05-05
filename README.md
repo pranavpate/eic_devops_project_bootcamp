@@ -1,2 +1,1 @@
-# eic_devops_project_bootcamp
-This repo is created and used for EIC's Devops Project Bootcamp
+# Create EC2 Instance and Install Docker
