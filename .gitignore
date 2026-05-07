@@ -1,0 +1,57 @@
+# Terraform state and config files
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+**/.terraform/*
+.terraform/*/terraform-provider-*.exe
+.terraform.lock.hcl
+crash.log
+
+# Terraform plan output
+*.tfplan
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+ 
+# CLI config files
+.terraformrc
+terraform.rc
+
+# Terraform binaries/tools (if checked in)
+istioctl
+
+terraform.tfvars
+*.tfvars
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbs.db (Windows users if any)
+Thumbs.db
+
+# VS Code settings (if not project-specific)
+.vscode/
+
+# Editor swap files
+*~
+*.swp
+*.swo
+
+# Node/npm leftovers if any frontend shown
+node_modules/
+
+# Python cache (if used)
+__pycache__/
+*.pyc
+
+# Docker
+*.env
+
+# Exe files
+*.exe
