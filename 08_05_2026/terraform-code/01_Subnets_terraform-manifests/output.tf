@@ -6,12 +6,11 @@ output "internet_gateway_id" {
   value = data.aws_internet_gateway.Bootcamp-vpc-do-not-delete-igw.id
 }
 
-output "pranav_subnet_id" {
-  value = aws_subnet.pranav_subnet.id
-}
-
-output "pranav_subnet_2_id" {
-  value = aws_subnet.pranav_subnet_2.id
+output "public_subnet_ids" {
+  value = [
+    aws_subnet.pranav_subnet.id,
+    aws_subnet.pranav_subnet_2.id
+  ]
 }
 
 output "pranav_public_rt_1_id" {

@@ -1,17 +1,19 @@
 terraform {
-  required_version = ">=1.0.0"
+  # Minimum Terraform CLI version required
+  required_version = ">= 1.12.0"
+
+  # Required providers and version constraints
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = ">=6.0"
     }
   }
-}
 
-terraform {
+  # Remote backend configuration using S3 
   backend "s3" {
     bucket       = "tfstate-dev-ap-south-1-5n72px"
-    key          = "dev/terraform.tfstate"
+    key          = "deveks/terraform.tfstate"
     region       = "ap-south-1"
     profile      = "pranav-terraform-profile"
     encrypt      = true
@@ -20,6 +22,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "ap-south-1"
+  # AWS region to use for all resources (from variables)
+  region = var.aws_region
   profile = "pranav-terraform-profile"
 }
