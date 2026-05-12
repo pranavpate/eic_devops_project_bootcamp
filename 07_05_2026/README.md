@@ -14,4 +14,4 @@
 
 # Replace your-tfstate-bucket-name with actual output values from this project.
 
-# Please check Hands_On_Practical_&_Steps.docx this word file for steps.
+# Please check Hands_On_Practical_Steps.docx this word file for steps.
